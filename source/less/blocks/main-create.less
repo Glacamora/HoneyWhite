@@ -1,0 +1,112 @@
+.main-create {
+  padding-top: 100px;
+  padding-bottom: 90px;
+  width: 540px;
+
+  p {
+    font-size: 17px;
+    line-height: 1.8;
+  }
+}
+
+.main-create__title {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #252525;
+  width: 340px;
+
+  span {
+    color: #10c9c3;
+  }
+}
+
+.main-create__filter-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  li {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.main-create__filter-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-create__filter-active {
+  color: #000;
+}
+
+.main-create__filter-items-img {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 475px;
+  height: 475px;
+
+  &_1 {
+    background-image: url("../img/graficsfuel.jpg");
+  }
+
+  &_2 {
+    background-image: url("../img/tel.jpg");
+  }
+
+  &_3 {
+    background-image: url("../img/book.jpg");
+  }
+
+  &_4 {
+    background-image: url("../img/glass.jpg");
+  }
+
+  &_5 {
+    background-image: url("../img/shopping.jpg");
+  }
+
+  &_6 {
+    background-image: url("../img/bag.jpg");
+  }
+
+  &_7 {
+    background-image: url("../img/honey.jpg");
+  }
+
+  &_8 {
+    background-image: url("../img/shampoo.jpg");
+  }
+}
+
+.main-create__filter-items a:hover div {
+  position: relative;
+  background-color: #10c9c3;
+  opacity: 0.9;
+  height: 475px;
+  width: 475px;
+  z-index: 99;
+  transition: .6s opacity,.6s background-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/look.svg");
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    top: 45%;
+    left: 45%;
+  }
+}
