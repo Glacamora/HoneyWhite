@@ -13,6 +13,8 @@
 
 .order__text {
   margin-bottom: 24px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .order__button {
@@ -25,4 +27,11 @@
   background-color: #10c9c3;
   padding: 15px 30px;
   margin-top: 20px;
+}
+
+
+@media (min-width: 700px) {
+  .order__text {
+    max-width: 66%;
+  }
 }
