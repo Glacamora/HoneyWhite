@@ -16,6 +16,7 @@
   line-height: 1.1;
   color: #252525;
   width: 340px;
+  max-width: 100%;
 
   span {
     color: #10c9c3;
@@ -29,22 +30,26 @@
   flex-wrap: wrap;
   margin-bottom: 50px;
   padding-left: 0;
+}
 
-  li {
-    font-size: 13px;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding-left: 15px;
-    padding-right: 15px;
-    cursor: pointer;
+.main-create__filter-item {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
 
-    &:hover {
-      color: #000;
-    }
+  &_active {
+    color: #000;
+  }
+
+  &:hover {
+    color: #000;
   }
 }
 
-.main-create__filter-items {
+.main-create__filtered-results {
   display: flex;
   flex-wrap: wrap;
 }
@@ -52,10 +57,6 @@
 .main-create__wrapper {
   width: 25%;
   height: 475px;
-}
-
-.main-create__filter-active {
-  color: #000;
 }
 
 .main-create__filter-items-img {
@@ -96,9 +97,25 @@
   &_8 {
     background-image: url("../img/shampoo.jpg");
   }
+
+  &_9 {
+    background-image: url("../img/labeltag.jpg");
+  }
+
+  &_10 {
+    background-image: url("../img/bottle.jpg");
+  }
+
+  &_11 {
+    background-image: url("../img/cardboard.jpg");
+  }
+
+  &_12 {
+    background-image: url("../img/business.jpg");
+  }
 }
 
-.main-create__filter-items a:hover .main-create__filter-items-fill {
+.main-create__filtered-results a:hover .main-create__filter-items-fill {
   position: relative;
   background-color: #10c9c3;
   opacity: 0.9;

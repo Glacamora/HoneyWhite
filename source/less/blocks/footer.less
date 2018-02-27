@@ -6,14 +6,16 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 
 .footer__copyright,
 .footer__contacts {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .footer__copyright-inc {
@@ -24,17 +26,27 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer__contacts {
-  margin-left: 50px;
+.footer__contacts a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.65;
 
-  a {
-    text-decoration: none;
-    color: inherit;
-    line-height: 1.65;
+  &:hover {
+    text-decoration: underline;
   }
 }
+
 .footer__menu {
   display: flex;
+
+  li a {
+    text-decoration: none;
+    color: #bcbcbc;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .footer__menu-list {
