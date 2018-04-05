@@ -1,0 +1,172 @@
+.contacts-error {
+  background-color: rgba(255,0,0,.4);
+}
+
+  }.contacts__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.contacts__text {
+  max-width: 100%;
+  padding-right: 15px;
+}
+
+.contacts__title {
+  font-size: 30px;
+  color: #171717;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.contacts__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contacts__item {
+  margin-top: 15px;
+
+  strong {
+    color: #171717;
+    padding-right: 5px;
+  }
+}
+
+.contacts__item:first-child {
+  margin-top: 24;
+}
+
+.contacts__form {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+fieldset {
+  border: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+
+input {
+  line-height: 1.25;
+  color: #464a4c;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  border: 1px solid rgba(0,0,0,.15);
+  padding: 16px 22px;
+  width: 100%;
+
+  &:focus {
+    border-color: #10c9c3;
+    outline: none;
+  }
+}
+
+input:nth-child(2n+2) {
+  margin-right: 0;
+
+}
+
+textarea {
+  padding: 16px 22px;
+  width: 100%;
+  height: 17.5%;
+  border: 1px solid #e6e6e6;
+
+  &:focus {
+    border-color: #10c9c3;
+    outline: none;
+  }
+}
+
+.contacts__form-fieldset-textarea {
+  display: flex;
+  flex-direction: column;
+
+  &>input {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+.contacts__form-fieldset-contacts {
+  padding-top: 30px;
+}
+
+.contacts__form-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  border: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #10c9c3;
+  padding: 18px 35px;
+  margin-top: 30px;
+  transition: .5s all;
+
+  &:hover {
+    background-color: #252525;
+    color: #fff;
+  }
+}
+
+
+@media (min-width: 904px) {
+  .contacts__form-fieldset-contacts {
+    flex-direction: row;
+  }
+
+  input {
+    width: 48.7%;
+  }
+}
+
+@media (min-width: 1010px) {
+  .contacts__container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .contacts__text {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    padding-right: 15px;
+  }
+
+  .contacts__form {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    padding-left: 15px;
+    margin-bottom: 0;
+  }
+
+  input {
+    width: 46.3%;
+  }
+
+  .contacts__form-fieldset-contacts {
+    padding-top: 10px;
+  }
+
+  .contacts__form-fieldset-textarea {
+    &>input {
+      width: 95.5%;
+    }
+  }
+
+  textarea {
+    width: 95.5%;
+  }
+}
