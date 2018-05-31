@@ -10,6 +10,47 @@
   }
 }
 
+.animation {
+  animation-name: animation;
+  -webkit-animation-name: animation;
+
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+}
+
+@keyframes animation {
+  0% {
+      transform: scale(0.98);
+  }
+  50% {
+      transform: scale(1.05);
+  }
+  80% {
+      transform: scale(0.95);
+  }
+  90% {
+      transform: scale(1);
+  }
+}
+
+@-webkit-keyframes animation {
+  0% {
+      -webkit-transform: scale(1.8);
+  }
+  50% {
+      -webkit-transform: scale(0.95);
+  }
+  80% {
+      -webkit-transform: scale(1.05);
+  }
+  90% {
+      -webkit-transform: scale(1);
+  }
+}
+
 .main-create__title {
   font-size: 38px;
   font-weight: 500;
