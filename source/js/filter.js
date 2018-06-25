@@ -3,7 +3,17 @@ var filterItems = document.querySelectorAll(".main-create__filter-item");
 for (var i = 0; i < filterItems.length; i++) {
   filterItems[i].addEventListener("click", function(event){
     filter(this);
+    tab(filterItems, this);
   });
+}
+
+function tab(filterItems, item)
+{
+  for (var i = 0; i < filterItems.length; i++) {
+    filterItems[i].classList.remove("main-create__filter-item_active");
+  }
+
+  item.classList.add("main-create__filter-item_active");
 }
 
 function filter(element) {
